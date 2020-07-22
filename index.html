@@ -9,7 +9,13 @@
   <p id = "test"></p>
   <script src="./lib/note.js"></script>
   <script>
-  document.getElementById("test").innerHTML = note.text;
+  
+  notes.forEach(myFunction);
+
+  function myFunction(note) {
+    document.getElementById("test").innerHTML += "<li>" + note.text + "</li>" + "<br>";
+  }
+   
   </script>
 </body>
 
